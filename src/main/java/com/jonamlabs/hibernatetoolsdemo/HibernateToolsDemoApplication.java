@@ -1,0 +1,13 @@
+package com.jonamlabs.hibernatetoolsdemo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HibernateToolsDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HibernateToolsDemoApplication.class, args);
+	}
+
+}

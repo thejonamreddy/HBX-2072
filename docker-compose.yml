@@ -1,0 +1,18 @@
+
+version: '3.7'
+services:
+  db:
+    container_name: demo_db
+    image: mysql:5.7
+    ports: 
+      - 3306:3306
+    volumes: 
+      - demo_db_data:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_DATABASE: demo
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+volumes:
+    demo_db_data:
